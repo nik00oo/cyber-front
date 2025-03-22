@@ -1,10 +1,11 @@
-
 .header-wrapper {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 56px;
   margin-top: 16px;
+  width: 1440px;
+  height: 88px;
+  justify-content: space-between;
 
   .search-wrapper {
     background-color: rgba(245, 245, 245, 1);
@@ -28,7 +29,9 @@
       display: flex;
       gap: 52px;
       li {
-        .navlink {
+        color: black;
+        opacity:40%;
+        .nav-link {
           text-decoration: none;
           color: rgba(0, 0, 0, 0.3);
           font-family: Inter, monospace;
@@ -42,4 +45,9 @@
       }
     }
   }
+}
+.icons-wrapper{
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
 }

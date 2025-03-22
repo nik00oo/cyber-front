@@ -1,0 +1,273 @@
+.banner-wrapper{
+  background-color: #211C24;
+  width: 1130px;
+  height: 632px;
+  padding-right: 160px;
+  padding-left: 160px;
+  display: flex;
+  .iphone-14-wrapper{
+  }
+  .iphone-text-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .iphone-text{
+    min-width: 400px;
+    gap: 24px;
+    .iphone-p{
+      color: white;
+      width: 714px;
+      height: 32px;
+      opacity: 0.4;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 32px;
+    }
+    .iphone-h1{
+      width: 714px;
+      height: 72px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 100;
+      font-size: 96px;
+      line-height: 72px;
+      letter-spacing: -1%;
+      color: white;
+      .iphone-span{
+        color: white;
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        font-size: 96px;
+        line-height: 72px;
+        letter-spacing: -1%;
+      }
+    }
+
+    .iphone-h5{
+      opacity: 0.4;
+      width: 714px;
+      height: 24px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+      color: #FFFFFF;
+    }
+    .shop-now-btn{
+      width: 191px;
+      height: 56px;
+      gap: 8px;
+      padding: 16px 56px;
+      border-radius: 6px;
+      border: 1px solid #FFFFFF;
+      background-color: transparent;
+      color: white;
+    }
+  }
+}
+
+
+.multiple-banner-wrapper{
+  display: flex;
+  width: 1440px;
+  height: 600px;
+  .left-banner-wrapper{
+    width: 720px;
+    height: 600px;
+    .ps5-wrapper{
+      display: flex;
+      width: 720px;
+      height: 328px;
+      .ps5-img{
+        width: 344px;
+        height: 328px;
+      }
+      .ps5-text-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .ps5-text{
+          width: 338px;
+          height: 128px;
+          max-width: 404px;
+          gap: 16px;
+          .ps5-h1{
+            width: 338px;
+            height: 40px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            font-size: 49px;
+            line-height: 40px;
+          }
+          .ps5-p{
+            width: 338px;
+            height: 72px;
+            font-family: 'Inter', sans-serif;    font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            color:  #909090;
+            padding-top:16px;
+
+          }
+        }
+      }
+
+    }
+    .small-box-wrapper {
+      display: flex;
+      width: 720px;
+      height: 272px;
+      .small-box {
+        display: flex;
+        width: 360px;
+        height: 272px;
+        gap: 48px;
+        background-color: #EDEDED;
+        .small-box-img {
+          width: 110px;
+          height: 272px;
+        }
+        .small-box-text-wrapper {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .small-box-text {
+            gap: 8px;
+            .small-box-h1 {
+              width: 150px;
+              height: 120px;
+              font-family: 'Inter', sans-serif;
+              font-weight: 300;
+              font-size: 29px;
+              line-height: 40px;
+              color: black;
+              .small-box-span {
+                font-family: 'Inter', sans-serif;
+                font-weight: 500;
+                font-size: 29px;
+                line-height: 40px;
+                color: black;
+              }
+            }
+            .small-box-p {
+              width: 150px;
+              height: 48px;
+              font-family: 'Inter', sans-serif;
+              font-weight: 500;
+              font-size: 14px;
+              line-height: 24px;
+              color:#909090;
+            }
+          }
+        }
+
+      }
+      .small-box-right{
+        display: flex;
+        width: 360px;
+        height: 272px;
+        gap: 48px;
+        background-color: #353535;}
+      .small-box-img {
+        width: 110px;
+        height: 272px;
+      }
+      .small-box-text-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .small-box-text {
+          gap: 8px;
+          .small-box-right-h1 {
+            width: 150px;
+            height: 120px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            font-size: 29px;
+            line-height: 40px;
+            color: white;
+            .small-box-right-span {
+              font-family: 'Inter', sans-serif;
+              font-weight: 500;
+              font-size: 29px;
+              line-height: 40px;
+              color: white;
+            }
+          }
+          .small-box-right-p {
+            width: 150px;
+            height: 48px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            color:#909090;
+          }
+        }
+      }
+    }
+  }
+  .right-banner-wrapper{
+    width: 720px;
+    height: 600px;
+    gap: 12px;
+    display: flex;
+    padding-right: 0;
+    .macbook-text-wrapper{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 164px 97px 164px 56px;
+      .macbook-text{
+        .macbook-h1{
+          font-family: 'Inter', sans-serif;
+          font-weight: 100;
+          font-size: 64px;
+          line-height: 56px;
+          .macbook-span{
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            font-size: 64px;
+            line-height: 56px;
+            color:black
+          }
+        }
+        .macbook-p{
+          margin-top:16px;
+          font-family: 'Inter', sans-serif;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 24px;
+          width: 360px;
+          height: 72px;
+          color:#909090
+        }
+        .shop-now-btn{
+          width: 191px;
+          height: 56px;
+          gap: 8px;
+          padding: 16px 56px;
+          border-radius: 6px;
+          border: 1px solid #000000;
+          background-color: transparent;
+          margin-top: 16px;
+
+        }
+      }
+      .macbook-img{
+
+        padding-top: 49px;
+        padding-bottom: 49px;
+        padding-left: 74px;
+        width: 292px;
+        height: 502px;
+
+      }
+    }
+  }
+
+
+
+
+}

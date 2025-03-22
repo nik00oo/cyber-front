@@ -1,4 +1,3 @@
-
 import {useEffect, useState} from "react";
 import axios from "axios";
 import classes from '../modules/Header.module.scss'
@@ -9,47 +8,63 @@ import logo from '../assets/cyber-logo.svg'
 import search from '../assets/search-icon.svg'
 import {Link} from "react-router";
 
+
 export const Header = () => {
-    const [menus, setMenus] = useState({});
-    const [menuOpen, setMenuOpen] = useState(false);
+    const [navItems, setNavItems] = useState([]);
+
 
     useEffect(() => {
+
         axios.get('http://localhost:5000/menus/navbarItems')
-            .then(function (response) {
-                console.log(response.data);
+            .then(response => {
+                setNavItems(response.data);
+                console.log('Navbar items:', response.data);
+                console.log(Array.isArray(navItems));
             })
-            .catch(function (error) {
-                console.log(error);
-            })
+            .catch(error => {
+                console.error('Error fetching data', error);
+            });
     }, []);
 
     return (
         <>
             <header className={classes['header-wrapper']}>
                 <figure>
-                    <img src={logo} alt="cyber-logo"/>
+                    <Link className={`${classes['nav-link']} ${classes['active']}`}
+                          to={'/'}>
+                        <img src={logo} alt="cyber-logo"/>
+                    </Link>
+
                 </figure>
+
                 <figure className={classes['search-wrapper']}>
                     <img src={search} alt="search-icon"/>
                     <input placeholder='Search' type='text'/>
                 </figure>
+
                 <nav>
                     <ul>
-                        <li>
-                            <Link className={`${classes['navlink']} ${classes['active']}`} to="/">Home</Link>
-                        </li>
-                        <li>
-                            <Link className={classes['navlink']} to="/">About</Link>
-                        </li>
-                        <li>
-                            <Link className={classes['navlink']} to="/">Contact Us</Link>
-                        </li>
-                        <li>
-                            <Link className={classes['navlink']} to="/">Blog</Link>
-                        </li>
+                        {navItems.map((navItem, index) => {
+                            return (
+                                <li key={index} >
+                                    <Link className={`${classes['navLink']} ${classes['active']}`}
+                                          to={navItem.slug}>
+                                        {navItem.name}
+                                    </Link>
+                                </li>
+                            );
+                        })}
                     </ul>
                 </nav>
+
+                <figure className={classes['icons-wrapper']}>
+                    <img src={cart} alt="cart-icon"/>
+                    <img src={favorites} alt="favorites-icon"/>
+                    <img src={profile} alt="profile-icon"/>
+                </figure>
             </header>
         </>
     )
 }
+
+export default Header
